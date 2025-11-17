@@ -5,7 +5,7 @@ import { AlertBoxService } from 'src/app/servies/shared/alert-box.service';
 @Component({
   selector: 'app-alert-box',
   templateUrl: './alert-box.component.html',
-  styleUrls: ['./alert-box.component.css'],
+  styleUrls: ['./alert-box.component.scss'],
   imports: [ IonAlert]
 })
 export class AlertBoxComponent implements OnInit {
