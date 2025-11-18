@@ -1,15 +1,15 @@
 /* tslint:disable:no-unused-variable */
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { waitForAsync, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { ButtonControlComponent } from './ButtonControl.component';
+import { ButtonControlComponent } from './button-control.component';
 
 describe('ButtonControlComponent', () => {
   let component: ButtonControlComponent;
   let fixture: ComponentFixture<ButtonControlComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ ButtonControlComponent ]
     })

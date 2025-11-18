@@ -5,7 +5,7 @@ import { HeaderComponent } from "../components/shared/header/header.component";
 import { FooterComponent } from "../components/shared/footer/footer.component";
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
-import { ButtonControlComponent } from "../controls/ButtonControl/ButtonControl.component";
+import { ButtonControlComponent } from "../controls/button-control/button-control.component";
 @Component({
   selector: 'app-folder',
   templateUrl: './folder.page.html',
