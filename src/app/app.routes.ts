@@ -12,7 +12,7 @@ export const routes: Routes = [
       import('./folder/folder.page').then((m) => m.FolderPage),
   },
   {
-    path: 'customeritems',
+    path: 'Categories',
     loadComponent: () =>
       import(
         './components/customer/customer-items/customer-items.component'

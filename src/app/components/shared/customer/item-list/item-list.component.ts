@@ -1,19 +1,28 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { IonGrid, IonRow, IonCol, IonContent } from '@ionic/angular/standalone';
+import {
+  IonGrid,
+  IonRow,
+  IonCol,
+  IonContent,
+  IonToolbar,
+} from '@ionic/angular/standalone';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
+import { HeaderComponent } from '../../header/header.component';
+import { FooterComponent } from '../../footer/footer.component';
 @Component({
   selector: 'app-item-list',
   templateUrl: './item-list.component.html',
   styleUrls: ['./item-list.component.scss'],
   imports: [
     CommonModule,
-    IonContent,
     IonCol,
     IonRow,
     IonGrid,
     MatGridListModule,
+    HeaderComponent,
+    FooterComponent,
   ],
 })
 export class ItemListComponent implements OnInit {

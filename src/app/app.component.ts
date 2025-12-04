@@ -65,7 +65,7 @@ export class AppComponent {
     { title: 'Business', url: '/folder/Business', icon: 'briefcase' },
     { title: 'Leads', url: '/folder/Leads', icon: 'business' },
     { title: 'Revenue', url: '/folder/Revenue', icon: 'wallet' },
-    { title: 'customer items', url: '/customeritems', icon: 'wallet' },
+    { title: 'Categories', url: 'Categories', icon: 'wallet' },
 
     //{ title: 'Trash', url: '/folder/trash', icon: 'trash' },
     // { title: 'Spam', url: '/folder/spam', icon: 'warning' },
