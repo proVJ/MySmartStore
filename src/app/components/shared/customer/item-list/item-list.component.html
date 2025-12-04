@@ -1,21 +1,18 @@
-<ion-grid>
-  <ion-row>
-    <ion-col>1</ion-col>
-    <ion-col>2</ion-col>
-    <!-- up to 12 rows -->
+<!-- <ion-content >
+  @import "@ionic/angular/css/core.css"; -->
+<div class="scroll-area">
+  <ion-grid>
+    <ion-row>
 
-  </ion-row>
-</ion-grid>
+      <ion-col size="4" *ngFor="let item of categories">
+        <div class="category-box">
+          <img [src]="item.icon" class="icon" />
+          <p>{{ item.name }}</p>
+        </div>
+      </ion-col>
 
+    </ion-row>
+  </ion-grid>
+  <!-- </ion-content> -->
 
-
-
-<div style="padding: 10px;">
-    <mat-grid-list cols="3" gutterSize="10px" rowHeight="100px">
-      <mat-grid-tile colspan="1">A</mat-grid-tile>
-      <mat-grid-tile colspan="3">B</mat-grid-tile>
-      <mat-grid-tile colspan="2">C</mat-grid-tile>
-      <mat-grid-tile colspan="3">D</mat-grid-tile>
-      <mat-grid-tile colspan="2">E</mat-grid-tile>
-    </mat-grid-list>
-  </div>
+</div>

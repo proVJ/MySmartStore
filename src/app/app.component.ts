@@ -1,15 +1,45 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
-import { IonApp, IonSplitPane, IonMenu, IonContent, IonList, IonListHeader, IonNote, IonMenuToggle, IonItem, IonIcon, IonLabel, IonRouterOutlet, IonRouterLink } from '@ionic/angular/standalone';
+import {
+  IonApp,
+  IonSplitPane,
+  IonMenu,
+  IonContent,
+  IonList,
+  IonListHeader,
+  IonNote,
+  IonMenuToggle,
+  IonItem,
+  IonIcon,
+  IonLabel,
+  IonRouterOutlet,
+  IonRouterLink,
+} from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
-import { mailOutline, mailSharp, paperPlaneOutline, paperPlaneSharp, heartOutline, heartSharp, archiveOutline, archiveSharp, trashOutline, trashSharp, warningOutline, warningSharp, bookmarkOutline, bookmarkSharp } from 'ionicons/icons';
+import {
+  mailOutline,
+  mailSharp,
+  paperPlaneOutline,
+  paperPlaneSharp,
+  heartOutline,
+  heartSharp,
+  archiveOutline,
+  archiveSharp,
+  trashOutline,
+  trashSharp,
+  warningOutline,
+  warningSharp,
+  bookmarkOutline,
+  bookmarkSharp,
+} from 'ionicons/icons';
 import { AlertBoxService } from './servies/shared/alert-box.service';
-import { AlertBoxComponent } from "./components/shared/alert-box/alert-box.component";
+import { AlertBoxComponent } from './components/shared/alert-box/alert-box.component';
+import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.scss'],
-  imports: [ 
+  imports: [
     RouterLink,
     RouterLinkActive,
     IonApp,
@@ -25,8 +55,9 @@ import { AlertBoxComponent } from "./components/shared/alert-box/alert-box.compo
     IonLabel,
     IonRouterLink,
     IonRouterOutlet,
-    AlertBoxComponent
-],
+    CommonModule,
+    // AlertBoxComponent
+  ],
 })
 export class AppComponent {
   public appPages = [
@@ -35,7 +66,7 @@ export class AppComponent {
     { title: 'Leads', url: '/folder/Leads', icon: 'business' },
     { title: 'Revenue', url: '/folder/Revenue', icon: 'wallet' },
     //{ title: 'Trash', url: '/folder/trash', icon: 'trash' },
-   // { title: 'Spam', url: '/folder/spam', icon: 'warning' },
+    // { title: 'Spam', url: '/folder/spam', icon: 'warning' },
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   alertbox_isVisible: boolean = false;
@@ -85,7 +116,7 @@ export class AppComponent {
     // });
   }
 
-  // exitApp(){      
+  // exitApp(){
   //     const okSub = this.alertBoxService.getIsOk().subscribe((isOk: boolean) => {
   //       if (isOk) {
   //         this.alertBoxService.updateIsVisible(false);

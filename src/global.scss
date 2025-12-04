@@ -1,28 +1,28 @@
-
 // Include theming for Angular Material with `mat.theme()`.
 // This Sass mixin will define CSS variables that are used for styling Angular Material
 // components according to the Material 3 design spec.
 // Learn more about theming and how to use it for your application's
 // custom components at https://material.angular.dev/guide/theming
-@use '@angular/material' as mat;
+@use "@angular/material" as mat;
 
 html {
-  @include mat.theme((
-    color: (
-      primary: mat.$blue-palette,
-      //tertiary: mat.$orange-palette,
-      theme-type: light,
-      
-    ),
-    typography: (
-      plain-family: Roboto,
-      brand-family: Open Sans,
-      bold-weight: 900,
-      medium-weight: 500,
-      regular-weight: 300,
-    ),
-    density: 100,
-  ));
+  @include mat.theme(
+    (
+      color: (
+        primary: mat.$blue-palette,
+        //tertiary: mat.$orange-palette,
+        theme-type: light,
+      ),
+      typography: (
+        plain-family: Roboto,
+        brand-family: Open Sans,
+        bold-weight: 900,
+        medium-weight: 500,
+        regular-weight: 300,
+      ),
+      density: 100,
+    )
+  );
 }
 
 body {
@@ -77,7 +77,13 @@ body {
 
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
-@import '@ionic/angular/css/palettes/dark.system.css';
+@import "@ionic/angular/css/palettes/dark.system.css";
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

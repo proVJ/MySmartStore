@@ -1,0 +1,33 @@
+.category-box {
+  background: #e1db1d;
+  border-radius: 20px;
+  text-align: center;
+  padding: 18px;
+  // height: 120px; /* Fixed height */
+  // display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  p {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+  }
+}
+
+.category-box:hover {
+  transform: scale(1.02);
+}
+
+.icon {
+  width: 50px; /* Fixed icon size */
+  height: 50px;
+}
+
+.scroll-area {
+  height: 100vh; /* full screen height */
+  overflow-y: auto; /* enable vertical scroll */
+  padding: 16px;
+}
