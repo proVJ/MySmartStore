@@ -11,4 +11,9 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./folder/folder.page').then((m) => m.FolderPage),
   },
+  {
+    path: 'customeritems',
+    loadComponent: () =>
+      import('./components/customer/customer-items/customer-items.component').then((m) => m.CustomerItemsComponent),
+  },
 ];
