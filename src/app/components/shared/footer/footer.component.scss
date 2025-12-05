@@ -6,8 +6,10 @@ ion-footer {
 
 ion-toolbar {
   --background: #f0f0f0;
+  --height: 40px; /* Adjust this value as needed */
 }
 
 ion-title {
   color: #333;
+  font-size: 14px; /* Adjust this value as needed */
 }
