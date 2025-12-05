@@ -4,18 +4,21 @@ import {
   IonRow,
   IonCol,
   IonContent,
-  IonToolbar,
+  IonCardContent,
+  IonCard,
 } from '@ionic/angular/standalone';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { CommonModule } from '@angular/common';
-import { BrowserModule } from '@angular/platform-browser';
 import { HeaderComponent } from '../../header/header.component';
 import { FooterComponent } from '../../footer/footer.component';
 @Component({
   selector: 'app-item-list',
   templateUrl: './item-list.component.html',
   styleUrls: ['./item-list.component.scss'],
+  // encapsulation: ViewEncapsulation.None,
   imports: [
+    IonCard,
+    IonCardContent,
     CommonModule,
     IonCol,
     IonRow,
@@ -23,6 +26,7 @@ import { FooterComponent } from '../../footer/footer.component';
     MatGridListModule,
     HeaderComponent,
     FooterComponent,
+    IonContent,
   ],
 })
 export class ItemListComponent implements OnInit {
@@ -31,12 +35,8 @@ export class ItemListComponent implements OnInit {
   ngOnInit() {}
   categories = [
     {
-      name: 'Fruits',
-      icon: 'https://media.istockphoto.com/id/683044558/photo/fresh-fruits-and-vegetables.jpg?s=1024x1024&w=is&k=20&c=tOe-UFjTVOPVzsYKUJTdZsDkbCTRW3qaScoFlR10o8U=',
-    },
-    {
-      name: 'Vegetables',
-      icon: 'https://media.istockphoto.com/id/683044554/photo/assortment-of-the-fresh-vegetables.jpg?s=1024x1024&w=is&k=20&c=soYvpwrXKHKpufF0uq0ZeUtL9jGTgWNJ9_uJA1VGh6Y=',
+      name: 'Dal-Chawal',
+      icon: 'https://media.istockphoto.com/id/2194662963/vector/beauty-and-spa-icon-set-solid-icon-collection-vector-illustration-stock-illustration-icon.jpg?s=1024x1024&w=is&k=20&c=0MBAI8bFofbfpTKo4-DbQqGwGMLKBHIvUDoQuhaa7Fg=',
     },
     {
       name: 'Snacks',
@@ -57,33 +57,6 @@ export class ItemListComponent implements OnInit {
     {
       name: 'Household',
       icon: 'https://media.istockphoto.com/id/2205552496/vector/home-interior-and-furniture-icon-set-thin-line-editable-stroke-icons-for-interior-design.jpg?s=1024x1024&w=is&k=20&c=JHxZOvLnhyxUxrsoUJinBLeuEodu5Nim0cDPLr5klgA=',
-    },
-    {
-      name: 'Personal Care',
-      icon: 'https://media.istockphoto.com/id/2194662963/vector/beauty-and-spa-icon-set-solid-icon-collection-vector-illustration-stock-illustration-icon.jpg?s=1024x1024&w=is&k=20&c=0MBAI8bFofbfpTKo4-DbQqGwGMLKBHIvUDoQuhaa7Fg=',
-    },
-
-    {
-      name: 'test 1',
-      icon: 'https://media.istockphoto.com/id/2194662963/vector/beauty-and-spa-icon-set-solid-icon-collection-vector-illustration-stock-illustration-icon.jpg?s=1024x1024&w=is&k=20&c=0MBAI8bFofbfpTKo4-DbQqGwGMLKBHIvUDoQuhaa7Fg=',
-    },
-    {
-      name: 'test 2',
-      icon: 'https://media.istockphoto.com/id/2194662963/vector/beauty-and-spa-icon-set-solid-icon-collection-vector-illustration-stock-illustration-icon.jpg?s=1024x1024&w=is&k=20&c=0MBAI8bFofbfpTKo4-DbQqGwGMLKBHIvUDoQuhaa7Fg=',
-    },
-
-    {
-      name: 'test 3',
-      icon: 'https://media.istockphoto.com/id/2194662963/vector/beauty-and-spa-icon-set-solid-icon-collection-vector-illustration-stock-illustration-icon.jpg?s=1024x1024&w=is&k=20&c=0MBAI8bFofbfpTKo4-DbQqGwGMLKBHIvUDoQuhaa7Fg=',
-    },
-
-    {
-      name: 'test 4',
-      icon: 'https://media.istockphoto.com/id/2194662963/vector/beauty-and-spa-icon-set-solid-icon-collection-vector-illustration-stock-illustration-icon.jpg?s=1024x1024&w=is&k=20&c=0MBAI8bFofbfpTKo4-DbQqGwGMLKBHIvUDoQuhaa7Fg=',
-    },
-    {
-      name: 'test 5',
-      icon: 'https://media.istockphoto.com/id/2194662963/vector/beauty-and-spa-icon-set-solid-icon-collection-vector-illustration-stock-illustration-icon.jpg?s=1024x1024&w=is&k=20&c=0MBAI8bFofbfpTKo4-DbQqGwGMLKBHIvUDoQuhaa7Fg=',
     },
   ];
 }

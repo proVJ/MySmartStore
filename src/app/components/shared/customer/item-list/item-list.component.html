@@ -1,21 +1,22 @@
 <app-header></app-header>
-<!-- <ion-content >
-  @import "@ionic/angular/css/core.css"; -->
-<div class="scroll-area">
+<ion-content [fullscreen]="true">
+
+  <!-- @import "@ionic/angular/css/core.css";  -->
+
   <ion-grid>
     <ion-row>
 
       <ion-col size="6" *ngFor="let item of categories">
-        <div class="category-box">
+        <ion-card>
           <img [src]="item.icon" class="icon" />
-          <p>{{ item.name }}</p>
-        </div>
+          <ion-card-content>
+            <p>{{ item.name }}</p>
+          </ion-card-content>
+        </ion-card>
       </ion-col>
 
     </ion-row>
   </ion-grid>
-  <!-- </ion-content> -->
 
-</div>
-
+</ion-content>
 <app-footer></app-footer>
