@@ -1,3 +1,32 @@
-<p>
-  login works!
-</p>
+<ion-content class="login-bg">
+  <div class="center-wrapper">
+    <div class="login-container">
+
+      <h2 class="title">Welcome</h2>
+      <!-- <p class="subtitle">Login to continue</p> -->
+
+      <ion-item fill="outline" class="login-item">
+        <ion-icon name="mail-outline" slot="start"></ion-icon>
+        <ion-input type="email" placeholder="Email"></ion-input>
+      </ion-item>
+
+      <ion-item fill="outline" class="login-item">
+        <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+        <ion-input type="password" placeholder="Password"></ion-input>
+      </ion-item>
+
+      <div class="forgot-text">
+        <a routerLink="/forgot-password">Forgot Password?</a>
+      </div>
+
+      <ion-button expand="block" shape="round" class="login-btn">
+        Login
+      </ion-button>
+
+      <div class="register-text">
+        Don’t have an account? <a routerLink="/signup">Sign Up</a>
+      </div>
+
+    </div>
+  </div>
+</ion-content>

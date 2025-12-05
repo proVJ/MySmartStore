@@ -1,0 +1,101 @@
+/* Background Gradient */
+.login-bg {
+    --background: linear-gradient(135deg, #4e54c8, #8f94fb);
+  }
+  
+  /* Wrapper to perfectly center the container */
+  .center-wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Login Card / Glassmorphism Container */
+  .login-container {
+    width: 90%;
+    max-width: 420px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(12px);
+    border-radius: 22px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    animation: fadeIn 0.8s ease;
+  }
+  
+  /* Headings */
+  .title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+  }
+  
+  .subtitle {
+    color: #eee;
+    margin-bottom: 20px;
+  }
+  
+  /* Input fields */
+  .login-item {
+    border-radius: 12px;
+    margin-top: 15px;
+  
+    --border-color: #ffffff55;
+    --placeholder-color: #ddd;
+    --color: #fff;
+    --highlight-color-focused: #fff;
+  }
+  
+  /* Fix for invisible input text */
+  ion-input {
+    color: #0f0d0d !important;
+    caret-color: #fff; /* blinking cursor color */
+  }
+  
+  ion-item ion-icon {
+    color: #fff;
+  }
+  
+  /* Links */
+  a {
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .forgot-text {
+    text-align: right;
+    margin: 10px 5px;
+  }
+  
+  .register-text {
+    margin-top: 15px;
+    color: #fff;
+  }
+  
+  /* Login Button */
+  .login-btn {
+    margin-top: 20px;
+    height: 48px;
+  
+    --background: #fff;
+    --color: #4e54c8;
+    font-weight: 700;
+    border-radius: 14px;
+  
+    box-shadow: 0 6px 18px rgba(255, 255, 255, 0.35);
+  }
+  
+  /* Fade animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
