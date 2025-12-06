@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { IonContent, IonItem, IonIcon, IonInput, IonButton } from "@ionic/angular/standalone";
+import { IonContent, IonItem, IonIcon, IonInput, IonButton, IonInputPasswordToggle } from "@ionic/angular/standalone";
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss'],
-  imports: [IonButton, IonInput, IonIcon, IonItem, IonContent]
+  imports: [IonButton, IonInput, IonIcon, IonItem, IonContent, IonInputPasswordToggle]
 })
 export class LoginComponent implements OnInit {
 
@@ -14,4 +14,7 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
 
+  async loginWithGoogle() {
+    
+  }
 }
